@@ -1,0 +1,45 @@
+/* Add a pulsing animation to the "New Fact" button */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Style the container */
+#container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px;
+  text-align: center;
+}
+
+/* Style the fact text */
+#fact {
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+/* Style the "New Fact" button */
+#new-fact-btn {
+  padding: 16px 32px;
+  background-color: #008CBA;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  animation: pulse 2s infinite;
+  transition: background-color 0.3s ease;
+}
+
+/* Add a hover effect to the "New Fact" button */
+#new-fact-btn:hover {
+  background-color: #005F7F;
+}
